@@ -1,0 +1,21 @@
+.login-panel{
+    padding: 160px;
+    background: lightsteelblue;
+}
+.data-form{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+    padding:15px;
+}
+.Loginpage{
+    padding:15px;
+}
+.signup{
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    color: deeppink;
+    cursor: pointer;
+}

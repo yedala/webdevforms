@@ -1,0 +1,42 @@
+<div class="login-panel">
+    <mat-card class="Loginpage">
+        <mat-card-title class="title">Login</mat-card-title>
+        <mat-card-content>
+            <form class="login-form" #loginForm="ngForm" (ngSubmit)="loginCheck()">
+                <div class="data-form">
+                    <mat-form-field>
+                        <mat-label>Email</mat-label>
+                        <input matInput  
+                        type="email" 
+                        name="email"                                                                                                                                                                                                                                                                                                                                                        
+                        #email="ngModel"
+                        placeholder="email"
+                        [(ngModel)]="login.email"
+                        required email>
+                        <mat-error *ngIf="email.errors?.['required']">The email field is Mandatory</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label>Password</mat-label>
+                        <input matInput 
+                        required passwordStrength
+                        type="password"
+                        name="password" 
+                        #password="ngModel"
+                        placeholder="password"
+                        [(ngModel)]="login.password">
+                        <mat-error *ngIf="password.errors?.['required']">The password is mandatory</mat-error>
+                        <mat-error *ngIf="password.errors?.['passwordStrength']">Enter one uppercase,one lower case, one number minimum</mat-error>
+                    </mat-form-field>
+
+                    <button  mat-raised-button color="primary" [disabled]="!loginForm.valid" type="submit" >
+                        Login
+                    </button>
+                </div>
+                <div class="signup" (click)="signUp()">SignUp</div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+
+
+
+</div>

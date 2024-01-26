@@ -1,0 +1,31 @@
+<div class="signup-panel">
+    <mat-card class="signup-data">
+        <mat-card-title class="title">Sign Up Now</mat-card-title>
+        <mat-card-content>
+            <form #signupForm="ngForm" (ngSubmit)="signUpNewUser()">
+                <div class="data-form">
+                    <mat-form-field>
+                        <mat-label>First Name</mat-label>
+                        <input matInput name="firstName" placeholder="First Name" [(ngModel)]="signUp.firstName" required>
+                    </mat-form-field>
+    
+                    <mat-form-field>
+                        <mat-label>Last Name</mat-label>
+                        <input matInput name="lastName" placeholder="Last Name" [(ngModel)]="signUp.lastName" required>
+                    </mat-form-field>
+    
+                    <mat-form-field>
+                        <mat-label>Mobile Number</mat-label>
+                        <input matInput name="mobileNumber" type="mobilenumber" placeholder="Mobile Number"
+                            [(ngModel)]="signUp.mobileNumber" required>
+                    </mat-form-field>
+                    <button  mat-raised-button color="accent" [disabled]="!signupForm.valid" type="submit" >
+                        SignUp
+                    </button>
+                </div>
+                
+                <div class="login" (click)="login()">Login</div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

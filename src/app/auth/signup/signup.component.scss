@@ -1,0 +1,23 @@
+.signup-panel {
+    padding: 160px;
+    background-color: palegoldenrod;
+}
+
+.data-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    padding: 15px;
+}
+
+
+
+.login {
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    color: deeppink;
+    cursor: pointer;
+}
