@@ -5,6 +5,7 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
 import { AuthenticationGuard } from '../auth/authentication.gaurd';
 import { MyCoursesComponent } from './my-courses/my-courses.component';
 import { CourseComponent } from './course/course.component';
+import { TestingComponent } from './testing/testing.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
       }
     ],
     canActivate:[AuthenticationGuard],
+  },
+  {
+    path:'testing',
+    component: TestingComponent,
   },
   
 ];
