@@ -27,7 +27,7 @@ export class LoginComponent {
     }
     const login$ = this.authenticationService.login(cred);
     login$.pipe().subscribe((res: any) => {
-      this.router.navigateByUrl('auth/home');
+      this.router.navigateByUrl('dev/home');
     })
   }
   signUp() {

@@ -13,7 +13,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from '../home/home.component';
-import { SideMenuComponent } from '../side-menu/side-menu.component';
 import { AuthComponent } from './auth.component';
 
 
@@ -24,7 +23,6 @@ import { AuthComponent } from './auth.component';
     SignupComponent,
     LoginComponent,
     HomeComponent,
-    SideMenuComponent,
     PasswordStrengthDirective,
 
   ],

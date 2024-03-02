@@ -28,7 +28,7 @@ export class AuthenticationService implements OnDestroy {
     logout(){
         this.credentialService.setCredentials();
         this.loggedInSubject.next(false);
-        this.router.navigateByUrl('/login');
+        this.router.navigateByUrl('/auth/login');
     }
     ngOnDestroy(): void {
         throw new Error("Method not implemented.");

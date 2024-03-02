@@ -1,18 +1,15 @@
-<div>
-    <div>
-        <ul>
-            <li>
-                one
-            </li>
-            <li>
-                one
-            </li>
-            <li>
-                one
-            </li>
-            <li>
-                one
-            </li>
-        </ul>
+<div class="side-menu" id="sideMenu" [ngClass]="{'open' : isOpenSideMenu}">
+    <a class="close-btn" (click)="openSideMenu()">&times;</a>
+    <a *ngIf="!isLoggedIn" [routerLink]="['/auth','login']">Login</a>
+    <div  *ngIf="isLoggedIn">
+        <a (click)="logout()">LogOut</a>
+        <a [routerLink]="['/dev','dashboard']">Dashboard</a>
+        <a [routerLink]="['/dev','profile']">Profile</a>
+        <a [routerLink]="['/dev','courses']">Courses</a>
     </div>
+
+</div>
+
+<div class="content" id="main">
+    <span class="menu-icon" (click)="openSideMenu()">&#9776;</span>
 </div>

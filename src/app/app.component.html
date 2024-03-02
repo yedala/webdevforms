@@ -1,6 +1,9 @@
-<app-nav-bar>
-</app-nav-bar>
+<div>
+   <app-side-menu></app-side-menu>
 
-<div [ngStyle]="{'min-height.px': screenHeight -200 }">
-<router-outlet ></router-outlet>
 </div>
+
+ <div>
+<app-loader [detectRouting]="true"></app-loader>
+    <router-outlet ></router-outlet>
+ </div>
