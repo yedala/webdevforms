@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-todolist',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./todolist.component.scss']
 })
 export class TodolistComponent {
+  @Input() data: any;
+  @Output() close = new EventEmitter<any>();
+  constructor(){
+
+  }
+  closeCmp(){
+    this.close.emit({
+      name: this.data.name,
+    })
+  }
+
 
 }

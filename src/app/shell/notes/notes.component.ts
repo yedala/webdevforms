@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { outputAst } from '@angular/compiler';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-notes',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./notes.component.scss']
 })
 export class NotesComponent {
-
+  @Input() data: any;
+  @Output() close = new EventEmitter<any>();
+  constructor(){
+    console.log('notes');
+  }
+  closeCmp(){
+    this.close.emit({
+      name: this.data.name,
+    })
+  }
 }

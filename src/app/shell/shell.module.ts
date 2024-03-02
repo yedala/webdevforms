@@ -11,6 +11,7 @@ import { WishlistComponent } from './wishlist/wishlist.component';
 import { ExpensesComponent } from './expenses/expenses.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import {MatSelectModule} from '@angular/material/select';
+import {MatIconModule} from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {MatSelectModule} from '@angular/material/select';
     ShellRoutingModule,
     MatCardModule,
     MatSelectModule,
+    MatIconModule
   ]
 })
 export class ShellModule { }

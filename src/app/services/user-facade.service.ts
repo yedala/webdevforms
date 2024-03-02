@@ -40,6 +40,10 @@ export class userService implements OnDestroy {
         ];
         return of(res);
     }
+    fetchWidgetsList(){
+     let widgets: any =[{name: 'notes'},{name:'todolist'},{name: 'wishlist'},{name: 'expenses'}];
+        return of(widgets);
+    }
 
     ngOnDestroy(): void {
         throw new Error("Method not implemented.");

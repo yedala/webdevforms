@@ -1,0 +1,14 @@
+.parent {
+    background-color: #f4edc2;
+    min-height: 13vh;
+    .icon {
+
+        display: inline-block;
+        position: absolute;
+        right: 24%;
+        padding:5px;
+    }
+    .content{
+        padding:9px;
+    }
+}

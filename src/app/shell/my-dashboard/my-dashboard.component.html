@@ -7,7 +7,7 @@
         <div class="dropdown">
             <mat-form-field>
                 <mat-select placeholder="select a widget" [(value)]="selectedWidget">
-                    <mat-option *ngFor="let widget of widgets" [value]="widget.name">
+                    <mat-option *ngFor="let widget of widgets" [value]="widget.name" (click)="createComponent(widget.name)">
                         {{widget.name}}
                     </mat-option>
                 </mat-select>

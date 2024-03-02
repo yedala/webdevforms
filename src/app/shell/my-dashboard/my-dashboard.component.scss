@@ -17,5 +17,12 @@
         width: 77%;
         height: auto;
         border: 1px solid black;
+
+        div {
+            font-family: cursive;
+            display: flex;
+            justify-content: space-around;
+            background: #a56231;
+        }
     }
 }
