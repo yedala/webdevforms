@@ -11,7 +11,8 @@ import { WishlistComponent } from './wishlist/wishlist.component';
 import { ExpensesComponent } from './expenses/expenses.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import {MatSelectModule} from '@angular/material/select';
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
+import { TestingComponent } from './testing/testing.component'
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {MatIconModule} from '@angular/material/icon'
     WishlistComponent,
     ExpensesComponent,
     TodolistComponent,
+    TestingComponent,
    ],
   imports: [
     CommonModule,
